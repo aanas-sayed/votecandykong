@@ -133,8 +133,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero h2 {
-  /* color: #999; */
-  color: #22a28d; /* mod */
+  color: #fff;
+  font-size: 24px;
+  /* color: #22a28d; mod */
   /* -webkit-text-stroke-width: 0.5px; /* mod */
   /* -webkit-text-stroke-color: rgb(255, 255, 255); mod */
   margin-bottom: 50px;
@@ -191,6 +192,38 @@ h1, h2, h3, h4, h5, h6 {
   background: #03C4EB;
   border: 2px solid #03C4EB;
 }
+
+#hero .btn-facebook {
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: #3b5998;
+}
+
+#hero .btn-facebook:hover {
+  background: None;
+}
+
+#hero .btn-instagram {
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: #ac2bac;
+}
+
+#hero .btn-instagram:hover {
+  background: None;
+}
+
+#hero .btn-email {
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: #ffac44;
+}
+
+#hero .btn-email:hover {
+  background: None;
+}
+
+
 #profile-picture { /* mod */
   border-radius: 50%;
   max-height: 30em;
@@ -553,20 +586,22 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 40px 0;
 }
 
-#voting .actions a {
+#voting .actions {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
+  text-align: center;
+  margin-top: 3em;
+}
+
+#voting .btn-vote {
+  margin-bottom: 40px;
   letter-spacing: 1px;
-  display: inline-block;
   padding: 8px 20px;
   border-radius: 2px;
   transition: 0.5s;
   margin: 10px;
-}
-
-#voting .btn-vote {
   color: #72b2a7;
   background: none;
   border: 2px solid #72b2a7;
@@ -780,115 +815,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   transform: translate3d(0, 0, 0);
 }
 
-/* Testimonials Section
---------------------------------*/
-#testimonials {
-  background: #f6f6f6;
-  padding: 80px 0;
-}
-
-#testimonials .profile {
-  text-align: center;
-}
-
-#testimonials .profile .pic {
-  border-radius: 50%;
-  border: 6px solid #fff;
-  margin-bottom: 15px;
-  overflow: hidden;
-  height: 260px;
-  width: 260px;
-}
-
-#testimonials .profile .pic img {
-  max-width: 100%;
-}
-
-#testimonials .profile h4 {
-  font-weight: 700;
-  color: #03C4EB;
-  margin-bottom: 5px;
-}
-
-#testimonials .profile span {
-  color: #333333;
-}
-
-#testimonials .quote {
-  position: relative;
-  background: #fff;
-  padding: 60px;
-  margin-top: 40px;
-  font-size: 16px;
-  font-style: italic;
-  border-radius: 5px;
-}
-
-#testimonials .quote b {
-  display: inline-block;
-  font-size: 22px;
-  left: -9px;
-  position: relative;
-  top: -8px;
-}
-
-#testimonials .quote small {
-  display: inline-block;
-  right: -9px;
-  position: relative;
-  top: 4px;
-}
-
-/* Team Section
---------------------------------*/
-#team {
-  background: #fff;
-  padding: 80px 0 60px 0;
-}
-
-#team .member {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-#team .member .pic {
-  margin-bottom: 15px;
-  overflow: hidden;
-  height: 260px;
-}
-
-#team .member .pic img {
-  max-width: 100%;
-}
-
-#team .member h4 {
-  font-weight: 700;
-  margin-bottom: 2px;
-}
-
-#team .member span {
-  font-style: italic;
-  display: block;
-  font-size: 13px;
-}
-
-#team .member .social {
-  margin-top: 15px;
-}
-
-#team .member .social a {
-  color: #b3b3b3;
-}
-
-#team .member .social a:hover {
-  color: #03C4EB;
-}
-
-#team .member .social i {
-  font-size: 18px;
-  margin: 0 2px;
-}
-
 /* Contact Section
 --------------------------------*/
 #contact {
@@ -896,69 +822,55 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 80px 0;
 }
 
-#contact .info {
-  color: #333333;
-}
-
-#contact .info i {
-  font-size: 32px;
-  color: #03C4EB;
-  float: left;
-}
-
-#contact .info p {
-  padding: 0 0 10px 50px;
-  line-height: 24px;
-}
-
-#contact .form #sendmessage {
-  color: #03C4EB;
-  border: 1px solid #03C4EB;
-  display: none;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-
-#contact .form #errormessage {
-  color: red;
-  display: none;
-  border: 1px solid red;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-
-#contact .form #sendmessage.show, #contact .form #errormessage.show, #contact .form .show {
+#contact .actions {
   display: block;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
-#contact .form .validation {
-  color: red;
-  display: none;
-  margin: 0 0 20px;
-  font-weight: 400;
-  font-size: 13px;
+#contact .actions a {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 8px 20px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
 }
 
-#contact .form input, #contact .form textarea {
-  border-radius: 0;
-  box-shadow: none;
-}
-
-#contact .form button[type="submit"] {
-  background: #03C4EB;
-  border: 0;
-  padding: 10px 24px;
+#contact .btn-facebook {
+  border: 2px solid #fff;
   color: #fff;
-  transition: 0.4s;
+  background-color: #3b5998;
 }
 
-#contact .form button[type="submit"]:hover {
-  background: #25d8fc;
+#contact .btn-facebook:hover {
+  background: None;
 }
+
+#contact .btn-instagram {
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: #ac2bac;
+}
+
+#contact .btn-instagram:hover {
+  background: None;
+}
+
+#contact .btn-email {
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: #ffac44;
+}
+
+#contact .btn-email:hover {
+  background: None;
+}
+
 
 /*--------------------------------------------------------------
 # Footer
@@ -969,7 +881,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
-#footer .copyright {
+#footer .copyright {  
+  padding-top: 20px;
   text-align: center;
 }
 
@@ -977,5 +890,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding-top: 10px;
   text-align: center;
   font-size: 13px;
-  color: #ccc;
+  color: #fff;
+}
+
+#footer .credits a {
+  color:rgb(22, 29, 27)
+}
+
+#footer .attribution {
+  padding-top: 10px;
+  text-align: center;
 }
