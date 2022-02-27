@@ -643,19 +643,19 @@ body.mobile-nav-active #mobile-nav-toggle {
     border-radius: 1rem !important;
 }
 
-/* Services Section
+/* skills Section
 --------------------------------*/
-#services {
+#skills {
   background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("https://live.staticflickr.com/65535/49859056961_16d2216fc7_b.jpg") fixed center center;
   background-size: cover;
   padding: 80px 0 60px 0;
 }
 
-#services .service-item {
+#skills .skills-item {
   margin-bottom: 20px;
 }
 
-#services .service-icon {
+#skills .skills-icon {
   float: left;
   background: #03C4EB;
   padding: 16px;
@@ -664,31 +664,31 @@ body.mobile-nav-active #mobile-nav-toggle {
   border: 1px solid #03C4EB;
 }
 
-#services .service-icon i {
+#skills .skills-icon i {
   color: #fff;
   font-size: 24px;
 }
 
-#services .service-item:hover .service-icon {
+#skills .skills-item:hover .skills-icon {
   background: #fff;
 }
 
-#services .service-item:hover .service-icon i {
+#skills .skills-item:hover .skills-icon i {
   color: #03C4EB;
 }
 
-#services .service-title {
+#skills .skills-title {
   margin-left: 80px;
   font-weight: 700;
   margin-bottom: 15px;
   text-transform: uppercase;
 }
 
-#services .service-title a {
+#skills .skills-title a {
   color: #111;
 }
 
-#services .service-description {
+#skills .skills-description {
   margin-left: 80px;
   line-height: 24px;
 }
@@ -756,63 +756,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 #download-app #google-play img {
   height: 83px; 
   margin: 0 0 0 -13px;
-}
-
-/* Portfolio Section
---------------------------------*/
-#portfolio {
-  background: #fff;
-  padding: 80px 0;
-}
-
-#portfolio .portfolio-item {
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  height: 260px;
-  width: 100%;
-  display: table;
-  overflow: hidden;
-  margin-bottom: 30px;
-}
-
-#portfolio .portfolio-item .details {
-  height: 260px;
-  background: #fff;
-  display: table-cell;
-  vertical-align: middle;
-  opacity: 0;
-  transition: 0.3s;
-  text-align: center;
-}
-
-#portfolio .portfolio-item .details h4 {
-  font-size: 16px;
-  transition: transform 0.3s, opacity 0.3s;
-  transform: translate3d(0, -15px, 0);
-  font-weight: 700;
-  color: #333333;
-}
-
-#portfolio .portfolio-item .details span {
-  display: block;
-  color: #666666;
-  font-size: 13px;
-  transition: transform 0.3s, opacity 0.3s;
-  transform: translate3d(0, 15px, 0);
-}
-
-#portfolio .portfolio-item:hover .details {
-  opacity: 0.8;
-}
-
-#portfolio .portfolio-item:hover .details h4 {
-  transform: translate3d(0, 0, 0);
-}
-
-#portfolio .portfolio-item:hover .details span {
-  transform: translate3d(0, 0, 0);
 }
 
 /* Contact Section
